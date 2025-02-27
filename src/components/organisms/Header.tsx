@@ -31,7 +31,7 @@ function Header() {
     <div className="flex w-full fixed justify-between bg-blue-900 z-50 items-center px-6 sm:px-9 max-w-screen">
       {/* Logo */}
       <div className="font-semibold text-white drop-shadow-md text-lg sm:text-xl flex items-center">
-        <img src="/src/assets/logo-R.png" className="h-16 sm:h-20 md:h-24 w-auto" />
+        <img src="/assets/logo-R.png" className="h-16 sm:h-20 md:h-24 w-auto" />
         <p className="text-base sm:text-lg md:text-xl">&lt;ray / restu&gt;</p>
       </div>
 

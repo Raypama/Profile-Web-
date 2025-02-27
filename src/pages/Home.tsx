@@ -17,8 +17,7 @@ function Home() {
         <div
           className="absolute h-screen inset-0 bg-no-repeat bg-left-top top-0 opacity-30 z-0"
           style={{
-            backgroundImage:
-              "url('/assets/home-assets/lingkaranBesar.png')",
+            backgroundImage: "url('/assets/home-assets/lingkaranBesar.png')",
           }}
         ></div>
 
@@ -41,7 +40,7 @@ function Home() {
         </div>
         {/* Gambar Bulatan Kecil */}
         <img
-          src="/src/assets/home-assets/lingkaran kecil.png"
+          src="/assets/home-assets/lingkaran kecil.png"
           className="absolute w-24 sm:w-1/3 right-0 opacity-20 z-0"
         />
 

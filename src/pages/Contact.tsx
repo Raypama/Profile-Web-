@@ -85,13 +85,13 @@ function Contact() {
           <div className="bg-blue-700 h-96 px-5 py-5 rounded-r-3xl shadow-2xl relative">
             {/* Tambahin `z-0` biar ada di belakang */}
             <img
-              src="/src/assets/contact-assets/Ellipse 1.png"
+              src="/assets/contact-assets/Ellipse 1.png"
               alt="ellips"
               className="absolute  left-0 h-[700px] bottom-20 opacity-35 z-0"
             />
 
             <img
-              src="/src/assets/contact-assets/Ellipse 2.png"
+              src="/assets/contact-assets/Ellipse 2.png"
               alt="ellips"
               className="absolute  right-0 h-40 bottom-0 opacity-20 z-0"
             />

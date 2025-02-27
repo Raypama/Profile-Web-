@@ -1,6 +1,6 @@
 // import React from 'react'
 import MainLayout from "../../components/templates/MainLayout";
-import urpetcare from "../../assets/urpetcare.png";
+import urpetcare from "/assets/urpetcare.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 

@@ -37,7 +37,7 @@ function About() {
           {/* Image 2 */}
           <div className="relative flex flex-col justify-center items-center">
             <img
-              src="/src/assets/about-assets/Saly-10.png"
+              src="/assets/about-assets/Saly-10.png"
               className="w-3/4 sm:w-2/3 lg:w-full z-10"
             />
           </div>

@@ -4,32 +4,32 @@ const card = [
   {
     title: "Product Design",
     desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/src/assets/skills-assets/icon1.png",
+    img: "/assets/skills-assets/icon1.png",
   },
   {
     title: "App Design",
     desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/src/assets/skills-assets/icon2.png",
+    img: "/assets/skills-assets/icon2.png",
   },
   {
     title: "Web Design",
     desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/src/assets/skills-assets/icon3.png",
+    img: "/assets/skills-assets/icon3.png",
   },
   {
     title: "Development",
     desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/src/assets/skills-assets/icon4.png",
+    img: "/assets/skills-assets/icon4.png",
   },
   {
     title: "Ilustration",
     desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/src/assets/skills-assets/icon5.png",
+    img: "/assets/skills-assets/icon5.png",
   },
   {
     title: "Motion",
     desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/src/assets/skills-assets/icon6.png",
+    img: "/assets/skills-assets/icon6.png",
   },
 ];
 
