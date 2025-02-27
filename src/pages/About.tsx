@@ -1,6 +1,5 @@
 // import React from 'react'
 
-import { Link } from "react-router-dom";
 import MainLayout from "../components/templates/MainLayout";
 import { BiMoviePlay } from "react-icons/bi";
 import { FaBasketball, FaCamera } from "react-icons/fa6";
@@ -25,7 +24,7 @@ function About() {
     <MainLayout pageTitle="Rey About">
       <div className="py-4 px-4 sm:px-6 lg:px-10">
         {/* Grid yang lebih responsif */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-black h-full justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-black h-full justify-center">
           {/* Image 1 */}
           {/* <div className="relative flex flex-col justify-center items-center">
             <img
@@ -35,7 +34,7 @@ function About() {
           </div> */}
 
           {/* Image 2 */}
-          <div className="relative flex flex-col justify-center items-center">
+          <div className="relative flex flex-col justify-center lg:p-24 items-center">
             <img
               src="/assets/about-assets/Saly-10.png"
               className="w-3/4 sm:w-2/3 lg:w-full z-10"
@@ -43,7 +42,7 @@ function About() {
           </div>
 
           {/* Text Section */}
-          <div className="flex flex-col justify-center gap-4 px-2">
+          <div className="flex flex-col justify-center gap-4 px-3">
             <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-blue-950">
               FrontEnd and Backend / Fullstack.jr
             </h1>
@@ -80,12 +79,11 @@ function About() {
                   <li key={i} className="text-blue-950">
                     <div className="flex gap-2 text-sm sm:text-base md:text-lg">
                       <div className="flex-row my-auto">{item.icon}</div>
-                      <Link
-                        to={"/NotFound-lets-back"}
+                      <div
                         className="text-base sm:text-lg md:text-xl my-auto"
                       >
                         {item.name}
-                      </Link>
+                      </div>
                     </div>
                   </li>
                 ))}

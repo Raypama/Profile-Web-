@@ -48,7 +48,7 @@ function Home() {
         <div className="relative flex justify-center">
           {/* Gambar Utama */}
           <img
-            src="/src/assets/home-assets/hero-img.png"
+            src="/assets/home-assets/hero-img.png"
             className="w-2/3 sm:w-full max-w-sm sm:max-w-md md:max-w-lg z-10"
           />
         </div>
