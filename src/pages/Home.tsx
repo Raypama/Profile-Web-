@@ -18,7 +18,7 @@ function Home() {
           className="absolute h-screen inset-0 bg-no-repeat bg-left-top top-0 opacity-30 z-0"
           style={{
             backgroundImage:
-              "url('/src/assets/home-assets/lingkaranBesar.png')",
+              "url('/assets/home-assets/lingkaranBesar.png')",
           }}
         ></div>
 
