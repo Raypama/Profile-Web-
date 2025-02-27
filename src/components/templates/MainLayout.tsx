@@ -16,10 +16,10 @@ function MainLayout({ children, pageTitle }: LayoutProps) {
                 <title>{pageTitle}</title>
             </Helmet>
             <div >
-                <div className="">
+                <div className="min-h-screen ">
                     <Header />
                     {/* children itu contentnya */}
-                    <div className=''>
+                    <div className='pt-16 sm:pt-24'>
                         {children}
                     </div>
                 </div>

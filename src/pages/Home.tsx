@@ -1,36 +1,61 @@
 // import React from 'react'
-import { FaApple } from 'react-icons/fa6'
-import Button from '../components/atoms/Button'
-import MainLayout from '../components/templates/MainLayout'
-
+// import { FaApple } from 'react-icons/fa6'
+import Button from "../components/atoms/Button";
+import MainLayout from "../components/templates/MainLayout";
 
 function Home() {
-    return (
-        <MainLayout pageTitle='Home-dev'  >
-            <div className="h-screen px-10 bg-[url('/src/assets/home-assets/mainBG.png')] bg-cover bg-center">
-                        <img src="/src/assets/home-assets/lingkaranBesar.png" className=" absolute opacity-25 left-0 z-50 h-4/5 " />
-                <div className='grid  text-white grid-cols-2  h-full justify-center'>
-                    <div className='flex flex-col justify-center gap-2 z-50 '>
-                        <h2 className='font-semibold text-2xl'>Hello im, Rey</h2>
-                        <h1 className='font-bold text-4xl mb-2 '>FrontEnd and Backend / Fullstack.jr</h1>
-                        <p className='text-xl pb-6 '>Freelancer FullStack in the world,  Lets work and <br /> eazy going code...</p>
-                        <div>
-                        <Button  textButton1='Hire Me' textButton2='Get Cv'/>
-                        </div>
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/cv-rp.pdf"; // Path ke file CV di folder public
+    link.download = "Rey_CV.pdf"; // Nama file saat di-download
+    link.click();
+  };
+  return (
+    <MainLayout pageTitle="Home-dev">
+      <div className=" px-6 sm:px-10 py-24 sm:py-32 bg-cover bg-center relative flex flex-col-reverse sm:grid sm:grid-cols-2 items-center">
+        {/* Gambar Latar Belakang */}
+        <div
+          className="absolute h-screen inset-0 bg-no-repeat bg-left-top top-0 opacity-30 z-0"
+          style={{
+            backgroundImage:
+              "url('/src/assets/home-assets/lingkaranBesar.png')",
+          }}
+        ></div>
 
-                    </div>
-                    <div className='relative flex flex-col justify-center'>
-                        <img src="/src/assets/home-assets/lingkaran kecil.png" className="w-1/3 -right-10 opacity-25  z-0 absolute" />
-                        <img src="/src/assets/home-assets/hero-img.png" className="w-full z-10" />
-                        <div className='absolute z-30 left-64 bottom-72'>
-                        <FaApple size={60}/>
-                        </div>
-                    </div>
+        {/* Bagian Kiri (Text) */}
+        <div className="flex flex-col justify-center  gap-3 sm:gap-4 z-10 text-center sm:text-left">
+          <h2 className="font-semibold text-xl sm:text-2xl">Hello, I'm Rey</h2>
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl mb-2">
+            FrontEnd & Backend / Fullstack Jr.
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl pb-4 sm:pb-6">
+            FullStack in the world, Let's work and <br /> easy-going code...
+          </p>
+          <div className="flex justify-center sm:justify-start">
+            <Button
+              textButton1="Hire Me"
+              textButton2="Get CV"
+              onDownloadCV={handleDownloadCV}
+            />
+          </div>
+        </div>
+        {/* Gambar Bulatan Kecil */}
+        <img
+          src="/src/assets/home-assets/lingkaran kecil.png"
+          className="absolute w-24 sm:w-1/3 right-0 opacity-20 z-0"
+        />
 
-                </div>
-            </div>
-        </MainLayout>
-    )
+        {/* Bagian Kanan (Hero Image) */}
+        <div className="relative flex justify-center">
+          {/* Gambar Utama */}
+          <img
+            src="/src/assets/home-assets/hero-img.png"
+            className="w-2/3 sm:w-full max-w-sm sm:max-w-md md:max-w-lg z-10"
+          />
+        </div>
+      </div>
+    </MainLayout>
+  );
 }
 
-export default Home
+export default Home;
