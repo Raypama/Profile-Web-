@@ -1,6 +1,6 @@
 // import React from 'react'
 import MainLayout from "../../components/templates/MainLayout";
-import KenanganSenjapath from "/assets/KenanganSenja.png";
+import KenanganSenjapath from "/assets/kenanganSenja.png";
 // import { useState } from "react";
 import { Link } from "react-router-dom";
 

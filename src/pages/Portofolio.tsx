@@ -5,7 +5,7 @@ import Masonry from "react-masonry-css";
 
 const allGrid = [
   { img: "/assets/urpetcare.png", path: "urpetcare", name: "UrPetCare" },
-  { img: "/assets/urpetcare.png", path: "kenangansenja", name: "KenanganSenja" },
+  { img: "/assets/kenanganSenja.png", path: "kenangansenja", name: "KenanganSenja" },
 ];
 
 function Portofolio() {
