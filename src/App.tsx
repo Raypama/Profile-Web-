@@ -5,6 +5,7 @@ import Skills from "./pages/Skills";
 import Portofolio from "./pages/Portofolio";
 import Contact from "./pages/Contact";
 import UrPetCare from "./pages/portofolio/UrPetCare";
+import KenanganSenja from "./pages/portofolio/KenanganSenja";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/portofolio" element={<Portofolio />}/>
             {/* Child Route */}
             <Route path="portofolio/urpetcare" element={<UrPetCare />} />
+            <Route path="portofolio/kenangansenja" element={<KenanganSenja />} />
          
           <Route path="/contact" element={<Contact />} />
         </Routes>
