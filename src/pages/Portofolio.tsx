@@ -59,12 +59,12 @@ function Portofolio() {
                 alt="Portfolio Image"
                 className="w-full object-cover"
               />
-              <div className="absolute inset-0 bg-blue-500 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <h3 className="text-white text-lg font-bold">{item.name}</h3>
+              <div className="absolute inset-0 bg-blue-950 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <h3 className="text-white text-xl  font-bold">{item.name}</h3>
                 <div className="flex space-x-4 mt-2">
                 <button
                     onClick={() => navigate(`/portofolio/${item.path}`)} // <- FIX INI
-                    className="p-2 bg-white rounded-full text-blue-500 shadow"
+                    className="p-2 bg-white  rounded-full text-blue-500 shadow"
                   >
                     🔍 Lihat Detail
                   </button>
