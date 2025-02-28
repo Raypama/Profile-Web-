@@ -33,10 +33,10 @@ const KenanganSenja = () => {
               Kenangan Senja
             </p>
           </div>
-          <Link to={link}>
+          <Link to={link} target="blank">
             <div
               //   onClick={copyToClipboard}
-              className="w-full max-w-md rounded-sm shadow-sm border border-blue-950 p-2 cursor-pointer text-blue-500 text-center text-sm md:text-base"
+              className="w-full max-w-md rounded-lg  shadow-lg border border-blue-950 p-2 px-5 sm:px-36 cursor-pointer text-blue-500 text-center text-sm md:text-base"
             >
               Demo
             </div>

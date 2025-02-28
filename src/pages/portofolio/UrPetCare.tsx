@@ -1,18 +1,18 @@
 // import React from 'react'
 import MainLayout from "../../components/templates/MainLayout";
 import urpetcare from "/assets/urpetcare.png";
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const UrPetCare = () => {
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
   const link = "https://ur-pet-care.vercel.app/";
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(link);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset status setelah 2 detik
-  };
+  // const copyToClipboard = () => {
+  //   navigator.clipboard.writeText(link);
+  //   setCopied(true);
+  //   setTimeout(() => setCopied(false), 2000); // Reset status setelah 2 detik
+  // };
 
   return (
     <MainLayout pageTitle="Rey|| polaroid">
@@ -33,12 +33,14 @@ const UrPetCare = () => {
             UR Pet Care
           </p>
         </div>
-        <div
-          onClick={copyToClipboard}
-          className="w-full max-w-md rounded-sm shadow-sm border border-blue-950 p-2 cursor-pointer text-blue-500 text-center text-sm md:text-base"
-        >
-          {copied ? "✅ Link Copied!" : link}
-        </div>
+        <Link to={link} target="blank">
+            <div
+              //   onClick={copyToClipboard}
+              className="w-full max-w-md rounded-lg  shadow-lg border border-blue-950 p-2 px-5 sm:px-36 cursor-pointer text-blue-500 text-center text-sm md:text-base"
+            >
+              Demo
+            </div>
+          </Link>
       </div>
   
       {/* Bagian Kanan */}
