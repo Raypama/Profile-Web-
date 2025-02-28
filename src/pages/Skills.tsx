@@ -3,34 +3,25 @@ import MainLayout from "../components/templates/MainLayout";
 const card = [
   {
     title: "Product Design",
-    desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
+    desc: "Product design can also include rough sketches, like in SketchUp, to outline features that will be developed later.",
     img: "/assets/skills-assets/icon1.png",
   },
   {
     title: "App Design",
-    desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
+    desc: "Of course, app design includes making the website responsive across various user device sizes. An example of this can be seen in the navbar of my portfolio.",
     img: "/assets/skills-assets/icon2.png",
   },
   {
     title: "Web Design",
-    desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
+    desc: "I have designed a website using Figma to create a project overview before development.",
     img: "/assets/skills-assets/icon3.png",
   },
   {
     title: "Development",
-    desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
+    desc: "For development, I am currently familiar with React (Vite), TypeScript, and Next.js.",
     img: "/assets/skills-assets/icon4.png",
   },
-  {
-    title: "Ilustration",
-    desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/assets/skills-assets/icon5.png",
-  },
-  {
-    title: "Motion",
-    desc: "mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac",
-    img: "/assets/skills-assets/icon6.png",
-  },
+  
 ];
 
 function Skills() {
