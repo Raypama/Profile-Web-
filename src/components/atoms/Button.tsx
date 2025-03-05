@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 interface ButtonProps {
   textButton1: string;
   textButton2: string;
@@ -5,10 +7,11 @@ interface ButtonProps {
 }
 
 const Button = ({ textButton1, textButton2, onDownloadCV }: ButtonProps) => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-wrap gap-4 sm:gap-8 justify-center sm:justify-start">
       <button
-        onClick={() => alert("Loaded")}
+        onClick={() => navigate("/contact")}
         type="button"
         className="w-28 sm:w-32 h-10 sm:h-12 shadow-lg border border-blue-950 rounded-3xl 
                        text-blue-900 text-lg sm:text-xl font-medium 

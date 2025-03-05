@@ -66,7 +66,7 @@ function Portofolio() {
                     onClick={() => navigate(`/portofolio/${item.path}`)} // <- FIX INI
                     className="p-2 bg-white  rounded-full text-blue-500 shadow"
                   >
-                    🔍 Lihat Detail
+                    🔍 View Details
                   </button>
                 </div>
               </div>

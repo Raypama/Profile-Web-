@@ -6,8 +6,8 @@ import MainLayout from "../components/templates/MainLayout";
 function Home() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/cv-rp.pdf"; // Path ke file CV di folder public
-    link.download = "Rey_CV.pdf"; // Nama file saat di-download
+    link.href = "/Rai-Restu-Pama.pdf"; // Path ke file CV di folder public
+    link.download = "RaiRestuPama_CV.pdf"; // Nama file saat di-download
     link.click();
   };
   return (
