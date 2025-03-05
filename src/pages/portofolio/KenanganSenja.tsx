@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const KenanganSenja = () => {
   //   const [copied, setCopied] = useState(false);
-  const link = "https://ur-pet-care.vercel.app/";
+  const link = "https://rai-restu.vercel.app/";
 
   //   const copyToClipboard = () => {
   //     navigator.clipboard.writeText(link);
