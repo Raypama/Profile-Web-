@@ -46,21 +46,21 @@ const KenanganSenja = () => {
         {/* Bagian Kanan */}
         <div className="w-full md:w-1/2 h-auto md:h-[700px] pt-4 px-4 flex flex-col">
           <div className="font-semibold text-lg md:text-xl mb-2">
-            <p>Teknologi yang digunakan :</p>
+            <p>Technologies used :</p>
           </div>
 
           {/* Frontend */}
           <div className="mb-2">
-            <h2 className="text-base md:text-lg font-semibold">
-              Frontend html, css, javascript
+            <h2 className="text-base md:text-lg ">
+              <span className="font-semibold">Frontend: </span> html, css, javascript
             </h2>
             <ul className="list-disc px-6 text-sm md:text-base">
-              <li>html untuk struktur awal web kopi kenangan senja</li>
+              <li>HTML: For the initial structure of the "Kopi Kenangan Senja" website.</li>
               <li>
-                hanya menggunakan css biasa dengan manual
+              CSS: Using plain CSS manually for styling.
               </li>
               <li>
-                javascript untuk hamburger menu saja
+              JavaScript: Only for the hamburger menu functionality
               </li>
             </ul>
           </div>
