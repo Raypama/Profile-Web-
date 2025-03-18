@@ -48,24 +48,30 @@ function Contact() {
       setIsLoading(false);
       return;
     }
-    console.log("jalann submit");
 
-    // Format pesan WhatsApp
+    // Format email
     const name = encodeURIComponent(form.name);
     const email = encodeURIComponent(form.email);
     const message = encodeURIComponent(form.message);
 
-    // Format pesan WhatsApp
-    const whatsappMessage = `Hello!%0A%0AMy Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    // Email tujuan
+    const recipientEmail = "rayrestu7@gmail.com";
+    const subject = encodeURIComponent("New Message from Contact Form");
 
-    // Nomor tujuan (gunakan format internasional tanpa "+")
-    const phoneNumber = "6285693013151";
+    // Buat URL untuk Gmail Web
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipientEmail}&su=${subject}&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
 
-    // Buat URL WhatsApp
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
-    // Redirect ke WhatsApp
-    window.open(whatsappURL, "_blank");
+    // Buat URL mailto
+    const mailtoURL = `mailto:${recipientEmail}?subject=${subject}&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
+
+    // Redirect ke email client
+    if(gmailURL){
+      // Redirect ke Gmail Web
+    window.open(gmailURL, "_blank");
+    }
+    
+    window.location.href = mailtoURL;
 
     setIsLoading(false);
   };
